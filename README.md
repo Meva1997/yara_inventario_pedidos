@@ -1,54 +1,56 @@
-# React + TypeScript + Vite
+# Yara Inventario Pedidos
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a personal project designed to manage products and budgets efficiently. It showcases my skills in React, TypeScript, Zustand, and Tailwind CSS, and demonstrates my ability to build responsive, feature-rich applications.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Product Management**: Add, edit, delete, and filter products.
+- **Budget Tracking**: Adjust budgets and visualize spending with a progress bar.
+- **Data Persistence**: Save products and budgets using `localStorage`.
+- **Responsive Design**: Optimized for desktop and mobile using Tailwind CSS.
+- **User Feedback**: Toast notifications for actions like adding or deleting products.
 
-## Expanding the ESLint configuration
+## Technologies Used
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **React**: Frontend framework for building UI components.
+- **TypeScript**: Type-safe development.
+- **Zustand**: Lightweight state management.
+- **Tailwind CSS**: Utility-first CSS framework for styling.
+- **Vite**: Fast build tool for modern web apps.
+- **React Router**: Navigation and routing.
+- **React Toastify**: Notifications.
+- **UUID**: Unique ID generation.
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## Challenges and Solutions
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- **Budget Validation**: Ensured users couldn't exceed their budget while editing or adding products.
+- **Data Persistence**: Used `localStorage` to save products and budgets across sessions.
+- **Deployment**: Successfully deployed the app using GitHub Pages.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## What I Learned
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+- **State Management**: Gained experience using Zustand for lightweight and efficient state management.
+- **Data Persistence**: Learned how to use `localStorage` to persist data across sessions.
+- **Responsive Design**: Improved my skills in creating responsive layouts with Tailwind CSS.
+- **React Router**: Enhanced my understanding of routing and navigation in React applications.
+- **Error Handling**: Implemented validation logic to handle edge cases, such as exceeding the budget.
+
+## Future Improvements
+
+- **Authentication**: Add user authentication to allow multiple users to manage their own budgets and products.
+- **Advanced Filtering**: Implement more advanced filtering options, such as filtering by price range or quantity.
+- **Analytics Dashboard**: Create a dashboard to visualize spending trends and product statistics.
+- **Dark Mode**: Add a dark mode toggle for better accessibility and user experience.
+- **Unit Tests**: Write unit tests to ensure the reliability and maintainability of the application.
+
+## Live Demo
+
+Check out the live version: [Yara Inventario Pedidos](https://Meva1997.github.io/yara_inventario_pedidos)
+
+## Disclaimer
+
+This is a personal project, and I kindly request that no modifications or contributions be made to the repository. It is intended for personal use and learning purposes.
+
+## License
+
+This project is not licensed for public use or modification.
