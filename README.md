@@ -45,7 +45,7 @@ This is a personal project designed to manage products and budgets efficiently. 
 
 ## Live Demo
 
-Check out the live version: [Yara Inventario Pedidos](https://Meva1997.github.io/yara_inventario_pedidos)
+Check out the live version: [Yara Inventario Pedidos](https://ubiquitous-cajeta-d51d8f.netlify.app/)
 
 ## Disclaimer
 
