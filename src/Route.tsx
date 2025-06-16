@@ -7,7 +7,7 @@ import ListProducts from "./views/ListProducts"
 export default function Router() {
   return (
     <>
-      <BrowserRouter basename="/yara_inventario_pedidos">
+      <BrowserRouter>
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<Home /> }  />
